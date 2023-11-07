@@ -5,10 +5,11 @@ export default {
     extend: {
       colors: {
         netCol: "#E50914",
+        netColHover: "#c11119",
       },
       fontFamily: {
         custom: [
-          "Netflix Font",
+          "Netflix Sans",
           "sans-serif",
           "Helvetica Neue",
           "Segoe UI",
