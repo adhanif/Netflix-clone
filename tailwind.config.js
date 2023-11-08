@@ -5,7 +5,9 @@ export default {
     extend: {
       colors: {
         netCol: "#E50914",
+
         netColHover: "#c11119",
+
       },
       fontFamily: {
         custom: [
