@@ -5,9 +5,11 @@ export default {
     extend: {
       colors: {
         netCol: "#E50914",
-
         netColHover: "#c11119",
-
+        background: "rgba(0, 0, 0, 0.5)",
+      },
+      backgroundImage: {
+        "hero-image": "url('../src/assets/hero.jpg')",
       },
       fontFamily: {
         custom: [

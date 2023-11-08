@@ -5,15 +5,12 @@ import heroImg from "../assets/hero.jpg";
 const HeroSection = () => {
   return (
     <div
-      className="relative overflow-hidden bg-no-repeat bg-center md:h-[600px] lg:h-[700px] object-fill bg-opacity-50"
-      style={{
-        backgroundImage: `url(${heroImg})`,
-      }}
+      className="relative overflow-hidden bg-no-repeat bg-center md:h-[600px] lg:h-[700px] object-fill bg-opacity-50 bg-hero-image"
+      // style={{
+      //   backgroundImage: `url(${heroImg})`,
+      // }}
     >
-      <div
-        className=" h-[700px] bg-opacity-50 "
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.65)" }}
-      >
+      <div className=" h-[700px] bg-opacity-50 bg-background">
         <div className=" flex flex-row justify-between  items-center px-10 xl:px-28 py-6  mx-0 xl:mx-14 ">
           <div>
             <img
