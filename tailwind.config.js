@@ -8,7 +8,7 @@ export default {
       },
       fontFamily: {
         custom: [
-          "Netflix Font",
+          "Netflix Sans",
           "sans-serif",
           "Helvetica Neue",
           "Segoe UI",
