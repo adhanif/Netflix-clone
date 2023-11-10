@@ -1,19 +1,17 @@
 import "./App.css";
 import React from "react";
-
-import HeroSection from "./component/HeroSection";
-
+import Home from "./component/Home";
 import Section2 from "./component/Section2";
-
+import SignIn from "./component/SignIn";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-
-      <HeroSection />
-
-      <Section2 />
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<SignIn />} />
+      </Routes>
     </>
   );
 }

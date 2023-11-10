@@ -1,19 +1,15 @@
 import React from "react";
 import NetflixLogo from "../assets/netflix-3.svg";
-import heroImg from "../assets/hero.jpg";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+  const handleSignIn = () => {
+    navigate("/login");
+  };
   return (
-    <div
-      className="relative overflow-hidden bg-no-repeat bg-center md:h-[600px] lg:h-[700px] object-fill bg-opacity-50"
-      style={{
-        backgroundImage: `url(${heroImg})`,
-      }}
-    >
-      <div
-        className=" h-[700px] bg-opacity-50 "
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.65)" }}
-      >
+    <div className="relative overflow-hidden bg-no-repeat bg-center md:h-[600px] lg:h-[700px] object-fill bg-opacity-50 bg-hero-image">
+      <div className=" h-[700px] bg-opacity-50 bg-background">
         <div className=" flex flex-row justify-between  items-center px-10 xl:px-28 py-6  mx-0 xl:mx-14 ">
           <div>
             <img
@@ -27,7 +23,10 @@ const HeroSection = () => {
             <div>
               <select
                 className="border rounded  sm:px-6 py-[5px] sm:py-[3px] font-medium text-sm sm:text-base"
-                style={{ backgroundColor: "rgba(0, 0, 0, 0.8)", color: "#fff" }}
+                style={{
+                  backgroundColor: "rgba(0, 0, 0, 0.8)",
+                  color: "#fff",
+                }}
               >
                 <option>English</option>
                 <option>Deutsch</option>
@@ -36,6 +35,7 @@ const HeroSection = () => {
             <button
               type="button"
               className="text-sm font-bold text-white bg-netCol hover:bg-netColHover px-[1rem] sm:px-[17px] py-1.5 rounded cursor-pointer "
+              onClick={handleSignIn}
             >
               Sign In
             </button>
