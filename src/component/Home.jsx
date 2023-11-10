@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "./Section2";
+import Section from "./Section";
 import HeroSection from "./HeroSection";
 import tv from "../assets/tv.png";
 import tvVideo from "../assets/tvVideo.mp4";
@@ -7,6 +7,7 @@ import device from "../assets/device.png";
 import deviceVideo from "../assets/deviceVideo.mp4";
 import kids from "../assets/kids.png";
 import mobile from "../assets/mobile.jpg";
+import Faq from "./Faq";
 
 const Home = () => {
   return (
@@ -40,7 +41,7 @@ const Home = () => {
       />
       <div className="py-1 bg-strip"></div>
       <Section
-        flexDirectionClasses={"flex flex-col lg:flex-row-reverse"}
+        flexDirectionClasses={"flex flex-col lg:flex-row"}
         heading={"Create profiles for kids"}
         paragraph={
           "Send kids on adventures with their favorite characters in a space made just for them—free with your membership."
@@ -54,6 +55,8 @@ const Home = () => {
         paragraph={"Watch on a plane, train, or submarine..."}
         image={mobile}
       />
+      <div className="py-1 bg-strip"></div>
+      <Faq />
       <div className="py-1 bg-strip"></div>
     </>
   );
