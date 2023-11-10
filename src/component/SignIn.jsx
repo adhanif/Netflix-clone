@@ -1,7 +1,13 @@
 import React from "react";
 import NetflixLogo from "../assets/netflix-3.svg";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/");
+  };
+
   return (
     <div className="h-full md:h-screen   bg-none  md:bg-hero-image ">
       <div className="h-screen bg-background sm:w-full">
@@ -9,7 +15,8 @@ const SignIn = () => {
           <img
             src={NetflixLogo}
             alt=""
-            className="h-[1.8rem] w-[6rem]   lg:h-[2.5rem] lg:w-[10rem]"
+            className="h-[1.8rem] w-[6rem]   lg:h-[2.5rem] lg:w-[10rem] cursor-pointer"
+            onClick={handleNavigate}
           />
         </div>
         <div
