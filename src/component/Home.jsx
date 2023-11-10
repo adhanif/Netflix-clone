@@ -6,6 +6,7 @@ import tvVideo from "../assets/tvVideo.mp4";
 import device from "../assets/device.png";
 import deviceVideo from "../assets/deviceVideo.mp4";
 import kids from "../assets/kids.png";
+import mobile from "../assets/mobile.jpg";
 
 const Home = () => {
   return (
@@ -45,6 +46,13 @@ const Home = () => {
           "Send kids on adventures with their favorite characters in a space made just for them—free with your membership."
         }
         image={kids}
+      />
+      <div className="py-1 bg-strip"></div>
+      <Section
+        flexDirectionClasses={"flex flex-col lg:flex-row-reverse"}
+        heading={"Download your shows to watch offline"}
+        paragraph={"Watch on a plane, train, or submarine..."}
+        image={mobile}
       />
       <div className="py-1 bg-strip"></div>
     </>
