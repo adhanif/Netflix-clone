@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <SignIn />
-      {/* <HeroSection />
-      <Section2 /> */}
+      <HeroSection />
+      <Section2 />
     </>
   );
 }

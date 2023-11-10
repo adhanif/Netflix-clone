@@ -3,8 +3,8 @@ import NetflixLogo from "../assets/netflix-3.svg";
 
 const SignIn = () => {
   return (
-    <div className="h-full  md:h-screen bg-hero-image">
-      <div className="h-screen bg-background ">
+    <div className="h-full md:h-screen   bg-none  md:bg-hero-image ">
+      <div className="h-screen bg-background sm:w-full">
         <div className="p-7">
           <img
             src={NetflixLogo}
@@ -13,7 +13,7 @@ const SignIn = () => {
           />
         </div>
         <div
-          className="container w-[29rem] mx-auto  px-16 pt-14 pb-40 rounded"
+          className="container md:w-[29rem] mx-auto  px-16 pt-14 pb-40 rounded"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.8)", color: "#fff" }}
         >
           <h1 className="text-[2rem] font-medium text-white mb-8">Sign In</h1>
